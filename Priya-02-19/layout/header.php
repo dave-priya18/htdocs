@@ -26,7 +26,8 @@
       <div id="menubar">
         <ul id="menu">
           <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
-          <li class="selected"><a href="index.php">Home</a></li>
+          <li class="selected"><a href="userprofile.php">User Profile</a></li>
+          <li class="selected"><a href="join.php">Join</a></li>
         </ul>
       </div>
     </div>

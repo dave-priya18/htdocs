@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 20, 2018 at 02:28 PM
+-- Generation Time: Feb 23, 2018 at 02:30 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.1
 
@@ -95,9 +95,10 @@ CREATE TABLE `conference_detail` (
 --
 
 INSERT INTO `conference_detail` (`conference_id`, `conference_title`, `conference_image`, `conference_desc`, `conference_start_date`, `conference_end_date`, `conference_landmark`, `conference_active_flag`, `created_by`, `updated_by`, `admin_id`, `conference_city`, `conference_state`, `conference_country`, `conference_postalcode`) VALUES
-(17, 'IIT IIT IIT iit', '4.jpeg', 'x srjedtmdtuteu', '2018-02-23', '2018-02-25', ' m zxm,lm', 0, 1, 0, 1, 'nnsvkdm', 'NKQJV', 'NWSVMW', 562356),
+(17, 'IIT IIT IIT iit', '5.jpeg', '                                         x srjedtmdtuteu                                        ', '2018-02-23', '2018-02-25', ' m zxm,lm', 0, 1, 0, 1, 'nnsvkdm', 'NKQJV', 'NWSVMW', 741852),
 (18, 'dnhdt', '4.jpeg', 'sdbgtyjtklrtyi', '2018-05-04', '2018-05-05', 'x,mbpete][.a', 0, 1, 0, 1, 'm,plwsv,a[', 'm,;[vfelp', 'mwpaldv,.wv', 895623),
-(19, 'IIT IIT IIT iit', '4.jpeg', 'x srjedtmdtuteu', '2018-02-23', '2018-02-25', ' m zxm,lm', 0, 0, 0, 0, 'nnsvkdm', 'NKQJV', 'NWSVMW', 562356);
+(19, 'IIT IIT IIT iit', '4.jpeg', 'x srjedtmdtuteu', '2018-02-23', '2018-02-25', ' m zxm,lm', 0, 0, 0, 0, 'nnsvkdm', 'NKQJV', 'NWSVMW', 562356),
+(20, 'IIT IIT IIT iit', '5.jpeg', '                                         x srjedtmdtuteu                                        ', '2018-02-23', '2018-02-25', ' m zxm,lm', 0, 1, 0, 1, 'nnsvkdm', 'NKQJV', 'NWSVMW', 741852);
 
 -- --------------------------------------------------------
 
@@ -148,10 +149,11 @@ CREATE TABLE `conference_speaker_detail` (
 --
 
 INSERT INTO `conference_speaker_detail` (`speaker_id`, `speaking_desc`, `speaker_name`, `speaker_designation`, `speaker_image`, `conference_id`, `admin_id`, `created_by`, `updated_by`) VALUES
-(3, '   Gold medaliscghhmftuklfyt from IIT Madras, 2011 batch.   ebfgrjerjhseh ', 'Polomi Vankateshwarmbmtuu', 'Technical Manager, Oracle', '4.jpeg', 17, 1, 1, 1),
+(3, '    Gold medaliscghhmftuklfyt from IIT Madras, 2011 batch.   ebfgrjerjhseh  ', 'Polomi Vankateshwarmbmtuu', 'Technical Manager, Oracle', '4.jpeg', 17, 1, 1, 1),
 (4, 'Novelist and Social Activist.', 'Patrick Nicolsan', 'Founder, LiveFor Foundation', '3.jpeg', 5, 1, 1, 1),
 (5, 'Best in R&D and contributor to freelancer.com', 'Fransis Joseph', 'HOD- R&D Harward ', '4.jpeg', 5, 1, 1, 0),
-(13, '  sdttnheryj', 'wsh4we', 'bnddryj', '4.jpeg', 17, 1, 1, 0);
+(13, '  sdttnheryj', 'wsh4we', 'bnddryj', '4.jpeg', 17, 1, 1, 0),
+(14, '  qdwsvv', 'e vfewb', ' erwt', '4.jpeg', 17, 1, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -175,7 +177,7 @@ CREATE TABLE `conference_sponsor_detail` (
 --
 
 INSERT INTO `conference_sponsor_detail` (`sponsor_id`, `sponsor_companyname`, `sponsor_logo`, `sponsor_companydesc`, `created_by`, `updated_by`, `conference_id`, `admin_id`) VALUES
-(18, '123sdfer', '5.jpeg', ' dbdfnmdfmu', 1, 0, 17, 1),
+(18, '123sdfer', 'indianic.jpg', ' ', 1, 0, 20, 1),
 (19, 'ntfmjtd', '2.jpg', 'rdyje5k5u8kl6 ', 1, 0, 18, 1),
 (20, 'wqefw3rgh', '3.jpeg', ' FDqethn4ynjh', 1, 0, 18, 1);
 
@@ -219,7 +221,7 @@ CREATE TABLE `user_profile` (
 --
 
 INSERT INTO `user_profile` (`user_userid`, `company_name`, `user_username`, `user_email`, `user_fname`, `user_lname`, `user_address`, `user_city`, `user_country`, `user_postalcode`, `user_aboutme`, `admin_id`, `created_by`) VALUES
-(15, 'Creative Code Inc.', 'qwweerr', 'qwe@wer.ytq', 'srrumrnmrtd', 'NMSAVOM', '   WODAV hv,tyuklrft6lfyli   ', 'JKSDP F', 'JSV ,L', 123000, '   XSF,BETENSTERJY   ', 1, 1);
+(29, 'Creative Code Inc.', 'sves', 'fmjntfuk', 'dtjr7s7k', 'dfhed5t7k', 'rjyt5kl', 'gtfnjr6ik', 'rn57', 456456, '1', 1, 1);
 
 --
 -- Indexes for dumped tables
@@ -287,7 +289,7 @@ ALTER TABLE `company_banner`
 -- AUTO_INCREMENT for table `conference_detail`
 --
 ALTER TABLE `conference_detail`
-  MODIFY `conference_id` int(3) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key', AUTO_INCREMENT=20;
+  MODIFY `conference_id` int(3) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key', AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `conference_schedule_detail`
@@ -299,7 +301,7 @@ ALTER TABLE `conference_schedule_detail`
 -- AUTO_INCREMENT for table `conference_speaker_detail`
 --
 ALTER TABLE `conference_speaker_detail`
-  MODIFY `speaker_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `speaker_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `conference_sponsor_detail`
@@ -311,7 +313,7 @@ ALTER TABLE `conference_sponsor_detail`
 -- AUTO_INCREMENT for table `user_profile`
 --
 ALTER TABLE `user_profile`
-  MODIFY `user_userid` int(3) NOT NULL AUTO_INCREMENT COMMENT 'User Id: Primary Key', AUTO_INCREMENT=16;
+  MODIFY `user_userid` int(3) NOT NULL AUTO_INCREMENT COMMENT 'User Id: Primary Key', AUTO_INCREMENT=30;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
