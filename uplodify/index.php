@@ -23,7 +23,7 @@ body {
 	<script type="text/javascript">
 		<?php $timestamp = time();?>
 		$(function() {
-			alert('hi');
+			alert('11111111');
 			$('#file_upload').uploadify({
 				'formData'     : {
 					'timestamp' : '<?php echo $timestamp;?>',

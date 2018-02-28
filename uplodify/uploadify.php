@@ -6,7 +6,7 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 */
 
 // Define a destination
-$targetFolder = '/opt/lampp/htdocs/uploadify/uploads'; // Relative to the root
+$targetFolder = '/opt/lampp/htdocs/EventOZ/sponsor_image'; // Relative to the root
 
 $verifyToken = md5('unique_salt' . $_POST['timestamp']);
 
